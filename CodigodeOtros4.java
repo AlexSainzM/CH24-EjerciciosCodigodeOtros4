@@ -1,3 +1,9 @@
+//Este programa es un juego de dos jugadores (2 input) y una salida
+//¨Piedra papel o tijera 
+
+//Reglas 
+//Piedra gana Tijera, Tiejera gana Papel, Papel gana Piedra
+
 package CodigodeOtros4;
 import java.util.Scanner;
 
@@ -32,17 +38,17 @@ public class cod4 {
 		          if (j2.equals("tijeras")) {
 		            g = 1;
 		          }
-		
+		          break;//Faltaban los breaks
 		        case "papel":
 		          if (j2.equals("piedra")) {
 		            g = 1;
 		          } //Aqui no estaba bien cerrado el corchete
-		          
+		          break; //Faltaban los breaks
 		        case "tijera":
 		          if (j2.equals("papel")) {
 		            g = 1;
 		          }
-		          break;
+		          break;//Faltaban los breaks
 		        default:
 		      }
 		      System.out.println("Gana el jugador " + g);
